@@ -1,0 +1,29 @@
+from threading import *
+import time
+
+
+class ThNo(Thread):
+    def run(self):
+        i = 0
+        while i < 10:
+            print(i + 1)
+            i = i + 1
+            time.sleep(1)
+
+
+t=ThNo()
+t.start()
+
+output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Process finished with exit code 0

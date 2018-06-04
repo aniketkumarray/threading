@@ -1,0 +1,19 @@
+from threading import *
+import time
+class th(Thread):
+    def run(self):
+        time.sleep(5)
+        print("this is threading after 5sec")
+
+
+t=th()
+t.start()
+t.join()
+
+print("end of mAIN thread")
+
+output:
+
+this is threading after 5sec
+end of mAIN thread
+
